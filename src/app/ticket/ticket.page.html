@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>ticket {{ticket.id}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <ion-item>
+    <ion-label>
+      <p>Tipo: </p>
+      {{ticket.tipo}}
+    </ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>
+      <p>Nombre: </p>
+      {{ticket.nombre}}
+    </ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>
+      <p>Correo: </p>
+      {{ticket.correo}}
+    </ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>
+      <p>Asunto: </p>
+      {{ticket.asunto}}
+    </ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>
+      <p>Descripción: </p>
+      {{ticket.descripcion}}
+    </ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Estado</ion-label>
+    <ion-select cancelText="Cancelar" okText="Aceptar!" value="No revisado">
+      <ion-select-option value="No revisado">No revisado</ion-select-option>
+      <ion-select-option value="1">Abierto</ion-select-option>
+      <ion-select-option value="2">En revision</ion-select-option>
+      <ion-select-option value="3">Solucionado</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+   <ion-label>Hair Color</ion-label>
+   <ion-select value="brown" okText="Okay" cancelText="Dismiss">
+     <ion-select-option value="brown">Brown</ion-select-option>
+     <ion-select-option value="blonde">Blonde</ion-select-option>
+     <ion-select-option value="black">Black</ion-select-option>
+     <ion-select-option value="red">Red</ion-select-option>
+   </ion-select>
+ </ion-item>
+</ion-content>
